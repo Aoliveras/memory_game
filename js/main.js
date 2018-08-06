@@ -24,9 +24,13 @@ cardImage: "king-of-diamonds.png"
 
 var cardsInPlay = [];
 
+var scoreBoard = " ";
+
 var checkForMatch = function () {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 			alert("You found a match!");
+			//trying to get score to chanfge when a match is found
+			document.getElementById('score').innerText = "Score: O1";
 			} else {
 				alert("Sorry, try again");
 			}
